@@ -54,9 +54,10 @@ This project captures video directly from the webcam, resizes it, and saves it i
      - Add a `gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)` line after capturing the frame.
      - Replace `frame` with `gray` in the `output.write()` function.
 
-### Example Output:
+## Example Output: 
 Captured videos will be saved in the `C:/Users/Shweta Tyagi/Computer Vision Project outputs/` folder with unique filenames like `output_1.avi`, `output_2.avi`, etc.
 Make modifications according to your system for proper save functionality.
+
 ---
 
 ## Contributing:
