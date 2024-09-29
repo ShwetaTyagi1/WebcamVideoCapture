@@ -1,37 +1,6 @@
 import cv2
 import os #helps in interacting with os. functions like join, apth etc
 
-"""
-cap=cv2.VideoCapture("location of the video.mp4")
-#cv2.VideoCapture helps to read/input any video present at the given location. like imread() but for videos
-print("output", cap)
-
-while True:
-    ret,frame=cap.read() #reading images of vid in cap and storing in frame. this function returns 2 values. 
-    #ret returns boolean value. if ret is true it means frames are being red. 
-    frame = cv2.resize(frame, (550,550))
-    cv2.imshow("frame", frame)
-    
-    #to convert frame to gray. Cant use 0. It can only be used with imread function
-    #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    #cv2.imshow("gray",gray)
-    
-    
-    k=cv2.waitKey(25)  
-    #less the value of waitkey - faster the video and vice verse
-    #0 means static image , 1 means dynamic ie video
-    #means amount of milisecond to wait before showing the next frame
-    
-    if k==ord("q") & 0xFF:  #0xFF is a bitmask. By performing a bitwise AND with 0xFF, you're effectively masking the value of k to ensure it falls within the range of 0 to 255, which corresponds to standard ASCII values.
-        break
-    
-    cap.release() #after we are done its imp to release vid stored in cap
-    cv2.destroyAllWindows()
-"""
-
-#PROJECT: capture video from webcam and save in memory
-
-
 cap=cv2.VideoCapture(0, cv2.CAP_DSHOW) #0 for accessing primary camera ie laptop cam , 1 for accessing external camera   , second parameter is just something to resolve a warning if it pops up
 
 
